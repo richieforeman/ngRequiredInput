@@ -7,7 +7,7 @@ import { bootstrapApplication } from '@angular/platform-browser';
   selector: 'test-el',
   standalone: true,
   imports: [CommonModule],
-  template: `<div>hi< {{name}}/div>`,
+  template: `<div>hi {{name}}/div>`,
 })
 export class TestEl {
   @Input({ required: true }) name?: string;
