@@ -13,7 +13,11 @@ export class TestEl {
   @Input({ required: true }) name?: string;
 
   constructor() {
-    console.log('name value is: ', this.name);
+    console.log('constructor, name value is: ', this.name);
+  }
+
+  ngOnInit() {
+    console.log('init, name value is ', this.name);
   }
 }
 
